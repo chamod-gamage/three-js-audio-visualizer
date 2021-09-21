@@ -1,0 +1,36 @@
+html,
+body {
+  overflow: hidden;
+}
+
+canvas {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  border: none;
+  margin: 0;
+  z-index: -1;
+}
+
+#upload-label:hover {
+  cursor: pointer;
+  color: #aaa;
+}
+
+#upload-label {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 15px;
+  color: #fff;
+  padding-left: 20px;
+  text-decoration: underline;
+}
+
+#uploader {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
