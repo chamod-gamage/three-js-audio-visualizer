@@ -924,7 +924,11 @@ Object.defineProperties(THREE.OrbitControls.prototype, {
 let dataArr;
 let windowContext = new (window.AudioContext || window.webkitAudioContext)();
 let analyzer = windowContext.createAnalyser();
-
+document.addEventListener('click', function() {
+  windowContext.resume().then(() => {
+    console.log('Playback resumed successfully');
+  });
+});
 function generateAudio() {
   media = windowContext.createMediaElementSource(
     document.getElementById('player')
